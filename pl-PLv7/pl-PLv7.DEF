@@ -1,0 +1,4 @@
+LIBRARY pl-PLv7
+ 
+ EXPORTS 
+    KbdLayerDescriptor @1
