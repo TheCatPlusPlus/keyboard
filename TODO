@@ -1,0 +1,8 @@
+- MSKLC is very dead: figure out how the layouts work internally and do everything myself
+    - API type: `KBDTABLES`
+    - Registry: v6 was `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\a0000415`, v7 registered as `a0010415`
+        - `0415` is the language code for pl-PL
+    - Does the DLL have to be in `system32`? Who's loading the DLL? Is the 32-bit stuff required for 32-bit apps?
+        - `C:\Windows\System32\pl-PLv7.dll`
+        - `C:\Windows\SysWOW64\pl-PLv7.dll`
+    - Figure out how else the MSKLC-generated MSI is doing
